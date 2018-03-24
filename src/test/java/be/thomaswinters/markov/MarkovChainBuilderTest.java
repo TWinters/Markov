@@ -1,4 +1,4 @@
-package be.thomaswinters.markov.test;
+package be.thomaswinters.markov;
 
 import be.thomaswinters.markov.model.generator.IMarkovGenerator;
 import be.thomaswinters.sentencemarkov.MarkovSentenceGenerator;
