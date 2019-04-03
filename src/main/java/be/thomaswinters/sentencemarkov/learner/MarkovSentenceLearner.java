@@ -73,4 +73,9 @@ public class MarkovSentenceLearner implements IMarkovSentenceGeneratorBuilder {
         return ImmutableList.copyOf(Stream.of(text.split(" ")).filter(e -> e.trim().length() != 0).iterator());
     }
 
+    public void addWeightedCorpora(List<Weighted<List<String>>> corpora) {
+        for (Weighted<List<String>> weightedList : corpora) {
+            this.addLines(weightedList.getElement(), weightedList.getWeight());
+        }
+    }
 }
